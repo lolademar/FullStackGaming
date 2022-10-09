@@ -135,7 +135,19 @@ footer {
     text-align: center;
 }
 
-h2 {
+.itemimg{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.textofoto{
+    position: absolute;
+    bottom: 150px;
+    left: 30px;
+}
+
+#titulo {
     padding: 50px;
     text-align: center;
     text-decoration: underline;
@@ -145,7 +157,7 @@ h2 {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 50px;
+    gap: 120px 60px;
 }
 
 
@@ -153,5 +165,99 @@ h2 {
 
     text-align: center;
     font-size: 15px;
+}
+
+
+
+.productos{
+
+    display: grid;
+    grid-template: 400px 1fr/ 40% 40%;
+    grid-template-areas: "fotoprod descprod" 
+                         "contenido contenido1";
+    grid-gap: 250px;
+    padding: 50px;
+}
+
+.fotoprod{
+    grid-area: fotoprod;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+    margin-top: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.fotoprod img{
+    flex: 0 0 100%;
+    width: 600%;
+    object-fit:scale-down;    
+    scroll-snap-align: center;
+}
+
+.descprod{
+    grid-area: descprod;
+    width: 100%;
+}
+
+.linea{
+    border-top: 1px solid black;
+    height: 2px;
+    max-width: 50%;
+    padding: 0;
+    margin: 20px auto 0 0;
+}
+
+.linea1{
+    border-top: 1px solid rgba(250, 193, 2, 255);
+    height: 2px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto 0 15px;
+    
+}
+
+.descprod p{
+    display: flexbox;
+    font-size: small;
+    margin-bottom: 5px;
+    
+}
+
+.descprod img{
+
+    width: 20px;
+    height: 20px;
+}
+
+.descprod button{
+
+    margin-top: 10px;
+    align-items: flex-start;
+}
+
+.contenido{
+
+    grid-area: contenido;
+    display: inline-flexbox;
+    margin-left: 25%;
+}
+
+.contenido p{
+   color: rgba(0, 0, 0, 0.664);
+   font-size: 15px;
+}
+
+
+.contenido1{
+    grid-area: contenido1;
+    display: inline-flexbox
+}
+
+.contenido1 p{
+   color: rgba(0, 0, 0, 0.664);
+   font-size: 15px;
 }
 
