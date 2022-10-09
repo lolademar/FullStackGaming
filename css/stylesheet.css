@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    display: inline-flex
+}
+
+.acceso {
+
+    margin-top: 70px;
+    margin-left: 30px;
+
+}
+
+.carrito {
+    height: 0px;
+    margin-left: 250px;
+    padding-bottom: -300px;
+    margin-top: -80px;
+}
+
+#busqueda {
+    height: fit-content;
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 100px;
+    border-radius: 15px;
+
+}
+
+.boton {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 5px;
+    border-radius: 15px;
+    width: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.boton span {
+    cursor: pointer;
+    display: flexbox;
+    position: relative;
+    transition: 0.5s;
+}
+
+.boton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.boton:hover span{
+    padding-right: 25px;
+}
+
+.boton:hover span:after{
+        opacity: 1;
+        right: 0;
+
+}
+
+.logo {
+    display: block;
+    margin-left: 400px;
+    margin-right: auto;
+    width: "200";
+    height: "200";
+
+
+}
+
+.links {
+    display: -ms-grid;    
+    background-color: rgba(250, 193, 2, 255);
+    
+
+}
+
+.contacto {
+    text-align: center;
+    font-size: 60px;
+
+}
+
+.link {
+    border-radius: 55px;
+    border-color: black;
+    border-style: groove;
+    text-align: center;
+    list-style: none;
+    width: 100px;
+    background-color: rgba(250, 193, 2, 255);
+    
+
+}
+
+.contenedor {
+    display: flex;
+    text-align: center;
+    background-color: rgba(250, 193, 2, 255);
+    justify-content: space-evenly;
+    
+    
+
+}
+
+
+.contenedor1 {
+    display: flex;
+}
+
+.contenedor2 {
+    display: block;
+}
+
+
+
+.redes {
+
+    list-style-type: none;
+    text-align: left;
+
+}
+
+footer {
+    text-align: center;
+}
+
+h2 {
+    padding: 50px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 50px;
+}
+
+
+.grid-container > div{
+
+    text-align: center;
+    font-size: 15px;
+}
+
