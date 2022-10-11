@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>FullStack Gaming - Inicio Sesion</title>
+</head>
+<body id="bodylogin">
+    
+<div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="name"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="email address"/>
+        <button>create</button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form>
+      <form class="login-form">
+        <input type="text" placeholder="username"/>
+        <input type="password" placeholder="password"/>
+        <button>login</button>
+        <p class="message">No estas registrado? <a href="#" onclick="alertbox()">Crear cuenta</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function alertbox() {
+
+          alert("La creacion de cuentas no esta disponible momentaneamente.")  
+
+    }
+  </script>
+  </body>

@@ -23,7 +23,7 @@
   width: 100%;
   height: 220px;
   background-position: center center;
-  background-image: url("../img/banner.png");
+  background-image: url("../img/Blue\ Futuristic\ Gaming\ Logo.png");
   background-size: cover;
 }
 }
@@ -37,7 +37,7 @@
   width:100%;
   z-index:-1;
   background-position: center center; 
-  background-image: url("../img/Logo.png");
+  background-image: url("../img/Blue\ Futuristic\ Gaming\ Logo.png");
   background-size: cover;
       
   }
@@ -49,9 +49,9 @@
 
 .fcontact{
   
-  background-color: rgba(250, 193, 2, 255); 
+  background-color: rgba(11,11,41,255); 
   background-size: cover;
-  color: black;
+  color: white;
   
  height: 15vh;
   
