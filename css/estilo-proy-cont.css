@@ -77,12 +77,18 @@
     align-content: flex-end ;
     padding-bottom: 1rem;
   }
+  .redes{
+    padding-left: 2px;
+  }
 }
 @media screen and (min-width: 640px) {
     #ubic {
       display:flex;
       justify-items: stretch;
       justify-content: left;
+    }
+    .redes{
+      padding-left: 6px;
     }
 }
 
