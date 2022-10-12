@@ -1,59 +1,77 @@
 *{
-    margin:0px;
-    padding: 0px;
-    
-    }
+  margin:0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
 
 /*  @media (max-width: 900px) {
 .imgfondo {
-    width: 100%;
-    height: 220px;
-    background-position: center center;
+  width: 100%;
+  height: 220px;
+  background-position: center center;
 }
 } 
 
 @media (max-width: 1600px){
 .imgfondo {
-    display: none;
+  display: none;
 }
 } */
 
 @media (max-width: 991px) {
-  .imgfondo{
-    width: 100%;
-    height: 220px;
-    background-position: center center;
-    background-image: url("../img/Banner.PNG");
-    background-size: cover;
-  }
+.imgfondo{
+  width: 100%;
+  height: 220px;
+  background-position: center center;
+  background-image: url("../img/Blue\ Futuristic\ Gaming\ Logo.png");
+  background-size: cover;
+}
 }
 
- @media (min-width: 992px)
+@media (min-width: 992px)
 { 
-  .imgLat{
-        
-    /* height: 93vh;*/
-    height:100%;
-    width:100%;
-    z-index:-1;
-    background-position: center center; 
-    background-image: url("../img/Banner.PNG");
-    background-size: cover;
-        
-    }
+.imgLat{
+      
+  /* height: 93vh;*/
+  height:100%;
+  width:100%;
+  z-index:-1;
+  background-position: center center; 
+  background-image: url("../img/Blue\ Futuristic\ Gaming\ Logo.png");
+  background-size: cover;
+      
+  }
 
-  .altura{ height: 93vh}
+.altura{ height: 85vh}
 
 }
 
 
 .fcontact{
-    
-    background-color: #191d2b; 
-    background-size: cover;
-    color: #6fbdb6ee;
-    
-   height: 7vh;
-    
+  
+  background-color: rgba(11,11,41,255); 
+  background-size: cover;
+  color: white;
+  
+ height: 15vh;
+  
 }
 
+/* .mapa{
+width: 5vw;
+height:5vh;
+} */
+
+.mapa {
+position:relative;
+height: 13vh;
+width:10vw;
+overflow: hidden;
+}
+.mapa iframe {
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+}
