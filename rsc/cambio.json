@@ -1,0 +1,15 @@
+{ "monedas": [
+        {
+            "name": "USD", 
+            "cambio": 1
+        }, 
+       {
+            "name": "ARS", 
+            "cambio": 300 
+        },
+      {
+            "name": "EUR", 
+            "cambio": 0.9 
+        }
+]
+}
