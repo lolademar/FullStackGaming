@@ -1,0 +1,115 @@
+*{
+    margin:0px;
+    padding: 0px;
+    
+    }
+
+/*  @media (max-width: 900px) {
+.imgfondo {
+    width: 100%;
+    height: 220px;
+    background-position: center center;
+}
+} 
+
+@media (max-width: 1600px){
+.imgfondo {
+    display: none;
+}
+} */
+
+@media (max-width: 991px) {
+  .imgfondo{
+    width: 100%;
+    height: 220px;
+    background-position: center center;
+    background-image: url("../img2/BlueFuturisticGamingLogosup.png");
+    background-size: cover;
+  }
+}
+
+ @media (min-width: 992px)
+{ 
+  .imgLat{
+       
+    z-index:-1;
+    background-position: center center; 
+    background-image: url("../img2/BlueFuturisticGamingLogo.png"); 
+    /* background-size: cover; */
+
+    animation: bounce;
+    animation-duration: 2s;    
+    }
+
+  .altura{ height: 90vh}
+
+}
+
+.bcolor{background-color: rgba(11,11,41,255); }
+
+.fcontact{
+    display:flex;
+    justify-content: space-around; 
+    
+    flex-wrap: wrap;
+    background-color: rgba(11,11,41,255);    
+    background-size: cover;
+    color: #6fbdb6ee;
+    height: 100%;
+    
+    
+    
+}
+
+.redes{
+  
+  display:flex;
+  justify-items: stretch;
+  justify-content: left;
+  flex-wrap: wrap;
+
+  
+}
+
+@media screen and (max-width: 640px) {
+  #ubic {
+    
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-end ;
+    padding-bottom: 1rem;
+    
+  }
+  .redes{
+    padding-left: 2px;
+  }
+}
+@media screen and (min-width: 640px) {
+    #ubic {
+     
+      display:flex;
+      justify-items: stretch;
+      justify-content: left;
+    }
+    .redes{
+      padding-left: 6px;
+    }
+}
+
+
+.mapa {
+  
+  position:relative;
+  
+  height: 90px;
+  width:140px;
+  padding:10px;
+  overflow: hidden;
+}
+.mapa iframe {
+  position: absolute;
+  top:0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
