@@ -22,8 +22,8 @@
                     target="_blank">Iniciar Sesion</a>
             </div>
             <div class="carrito">
-                <img src="img/carrito-de-compras.png" alt="carrito" width="40px" height="40px" align="center"> Carrito
-                de Compras
+                <img src="img/carrito-de-compras.png" alt="carrito" width="40px" height="40px" align="center"> <a href="#" onclick="alertbox()">Carrito
+                    de Compras</a> 
             </div>
         </section>
 
@@ -65,8 +65,8 @@
                     alt="Auris" width="300px">
             </a>
             <p>Auriculares HyperX Cloud Flight Black Wireless</p>
-            <b>$20.220</b>
-            <del>$23.460</del>
+            <b iprecio="iprecio">67,40</b>
+            <del>USD 78,20</del>
 
 
         </div>
@@ -76,8 +76,8 @@
                     alt="Auris" width="300px">
             </a>
             <p>Placa de Video ASUS GeForce GTX 1660 TI 6GB GDDR6 TUF EVO OC</p>
-            <b>$92.450</b>
-            <del>$123.460</del>
+            <b id="iprecio">308,17</b>
+            <del>USD 411,53</del>
         </div>
         <div>
             <a href="Productos/GEIL16GB.html">
@@ -85,8 +85,8 @@
                     alt="Auris" width="300px">
             </a>
             <p>Memoria GeiL DDR4 16GB 3000MHz Orion RGB Red</p>
-            <b>$17.650</b>
-            <del>$20.550</del>
+            <b id="iprecio">USD 58,83</b>
+            <del>USD 68,50</del>
         </div>
         <div>
             <a href="Productos/Ryzen1600AF.html">
@@ -94,8 +94,8 @@
                     alt="Auris" width="300px">
             </a>
             <p>Procesador AMD Ryzen 5 1600 AF Zen+ 12nm AM4 Wraith Stealth Cooler</p>
-            <b>$41.400</b>
-            <del>$46.800</del>
+            <b id="iprecio">USD 138</b>
+            <del>USD 156</del>
         </div>
         <div>
             <a href="Productos/MouseROGStrix.html">
@@ -103,8 +103,8 @@
                     alt="Auris" width="300px">
             </a>
             <p>Mouse ASUS ROG STRIX Evolve RGB Ambidiestro y Modular</p>
-            <b>$7.820</b>
-            <del>$9.250</del>
+            <b id="iprecio">USD 26,07</b>
+            <del>USD 30,83</del>
         </div>
         <div>
             <a href="Productos/MotherASUS.html">
@@ -112,8 +112,8 @@
                     alt="Auris" width="300px">
             </a>
             <p>Mother ASUS PRIME A520M-K AM4</p>
-            <b>$17.350</b>
-            <del>$24.780</del>
+            <b id="iprecio">USD 57,83</b>
+            <del>USD 82,60</del>
         </div>
     </div>
 
@@ -149,7 +149,7 @@
         <div class="trans">
             <img src="img/procesador-amd-supeordenador-frontier.jpg" alt="" width="90%">
             <div>
-                <h4>                    El ordenador más potente del mundo no arranca y sería culpa de AMD.</h4>
+                <h4> El ordenador más potente del mundo no arranca y sería culpa de AMD.</h4>
                 <h5>Frontier es un superordenador desarrollado para realizar trabajos avanzados que requieren gran
                     potente de cómputo. Una de sus principales características es la capacidad de ofrecer una potencia
                     superior al 1 ExaFLOP. Hablamos de una potencia del orden de miles de veces superior a la de un
@@ -158,7 +158,36 @@
         </div>
 
 
+<script>
+    
+var fetchData = async () => {
+    try {
+        const host = 'api.frankfurter.app';
+        const cdolar = parseInt(document.querySelector("#iprecio").textContent);
+        /* console.log("precio en dólares: " +cdolar);  */
+        const resp = await fetch(`https://${host}/latest?amount=${cdolar}&from=USD&to=HUF`);
+        const data = await resp.json();
+
+        usarData(data.rates.HUF)
+
+    } catch (error) { console.log("Error" + error) }
+}
+    ;
+
+fetchData();
+var usarData = valor => {
+    var x = document.querySelector("#iprecio");
+    x.textContent = valor
+}
+
+function alertbox(){
+    alert("El carrito estara disponible el 01/12/2022")
+}
+
+</script>
 
 </body>
+
+
 
 </html>

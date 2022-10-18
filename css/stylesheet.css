@@ -18,6 +18,11 @@
 
 }
 
+del{
+    color: red;
+    text-decoration: line-through;
+}
+
 .carrito {
     height: 0px;
     margin-left: 250px;
@@ -89,9 +94,7 @@
     text-decoration: none;
     border-radius: 40px;
     color: white;
-
-
-
+    justify-content: space-around;
 
 }
 
@@ -116,11 +119,10 @@
 .contenedor {
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
-
-
+    justify-content: space-around;
 
 }
+
 
 
 .contenedor1 {

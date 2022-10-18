@@ -29,19 +29,20 @@
 
     </header>
     <nav>
-        <section class="links">
-            <div class="contenedor">
-                <div class="links">
-                    <li class="link"><a href="../index.html">Home</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="productos.html">Productos</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="../contacto.html">Contacto</a> </li>
-                </div>
+        <div class="links">
+            <div class="links">
+                <li class="link"><a href="../index.html">Home</a>
             </div>
-        </section>
+            <div class="links">
+                <li class="link"><a href="../productos.html">Productos</a>
+            </div>
+            <div class="links">
+                <li class="link"><a href="../contacto.html">Contacto</a> </li>
+            </div>
+            <div class="links">
+                <li class="link"><a href="../nosotros.html">Nosotros</a> </li>
+            </div>
+        </div>
     </nav>
 
     <div class="productos">
@@ -56,7 +57,7 @@
                 <h1>Memoria GeiL DDR4 16GB 3000MHz Orion RGB Red</h1>
                 <h3>$17.650 <del style="color: red">$20.550</del></h3>
                 <h4 style="color: dodgerblue">Precio Especial!</h3>
-                    <button>Agregar al Carrito</button>
+                    <button onclick="alertbox()">Agregar al Carrito</button>
             </div>
             <div class="linea"></div>
             <div>
@@ -118,6 +119,12 @@
         </div>
     </div>
 
+    <script>
 
+        function alertbox() {
+            alert("El carrito estara disponible el 01/12/2022")
+        }
 
-</div>
+    </script>
+
+</body>

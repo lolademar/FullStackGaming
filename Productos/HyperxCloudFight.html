@@ -29,19 +29,20 @@
 
     </header>
     <nav>
-        <section class="links">
-            <div class="contenedor">
-                <div class="links">
-                    <li class="link"><a href="../index.html">Home</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="productos.html">Productos</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="../contacto.html">Contacto</a> </li>
-                </div>
+        <div class="links">
+            <div class="links">
+                <li class="link"><a href="index.html">Home</a>
             </div>
-        </section>
+            <div class="links">
+                <li class="link"><a href="productos.html">Productos</a>
+            </div>
+            <div class="links">
+                <li class="link"><a href="contacto.html">Contacto</a> </li>
+            </div>
+            <div class="links">
+                <li class="link"><a href="nosotros.html">Nosotros</a> </li>
+            </div>
+        </div>
     </nav>
 
     <div class="productos">
@@ -56,9 +57,9 @@
         <div class="item descprod">
             <div>
                 <h1>Auriculares HyperX Cloud Flight Black Wireless</h1>
-                <h3>$20.220 <del style="color: red">$23.460</del></h3>
+                <h3>20.220 <del style="color: red">$23.460</del></h3>
                 <h4 style="color: dodgerblue">Precio Especial!</h3>
-                    <button>Agregar al Carrito</button>
+                    <button onclick="alertbox()">Agregar al Carrito</button>
             </div>
             <div class="linea"></div>
             <div>
@@ -146,6 +147,14 @@
             </div>
         </div>
 
+        <script>
+
+            function alertbox() {
+                alert("El carrito estara disponible el 01/12/2022")
+            }
+
+        </script>
 
 
     </div>
+</body>

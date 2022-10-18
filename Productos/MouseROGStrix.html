@@ -29,19 +29,20 @@
 
     </header>
     <nav>
-        <section class="links">
-            <div class="contenedor">
-                <div class="links">
-                    <li class="link"><a href="../index.html">Home</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="productos.html">Productos</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="../contacto.html">Contacto</a> </li>
-                </div>
+        <div class="links">
+            <div class="links">
+                <li class="link"><a href="index.html">Home</a>
             </div>
-        </section>
+            <div class="links">
+                <li class="link"><a href="productos.html">Productos</a>
+            </div>
+            <div class="links">
+                <li class="link"><a href="contacto.html">Contacto</a> </li>
+            </div>
+            <div class="links">
+                <li class="link"><a href="nosotros.html">Nosotros</a> </li>
+            </div>
+        </div>
     </nav>
 
     <div class="productos">
@@ -49,8 +50,12 @@
             <img class="slider-item"
                 src="/img/compragamer_Imganen_general_23203_Mouse_ASUS_ROG_STRIX_Evolve_RGB_Ambidiestro_y_Modular_99814b07-grn.jpg"
                 alt="Auris" width="400px" height="350px">
-            <img class="slider-item" src="/img/compragamer_Imganen_general_23204_Mouse_ASUS_ROG_STRIX_Evolve_RGB_Ambidiestro_y_Modular_4dfc0364-grn.jpg" alt="Auris2" width="400px" height="350px">
-            <img class="slider-item" src="/img/compragamer_Imganen_general_23207_Mouse_ASUS_ROG_STRIX_Evolve_RGB_Ambidiestro_y_Modular_be29b639-grn.jpg" alt="Auris3" width="400px" height="350px">
+            <img class="slider-item"
+                src="/img/compragamer_Imganen_general_23204_Mouse_ASUS_ROG_STRIX_Evolve_RGB_Ambidiestro_y_Modular_4dfc0364-grn.jpg"
+                alt="Auris2" width="400px" height="350px">
+            <img class="slider-item"
+                src="/img/compragamer_Imganen_general_23207_Mouse_ASUS_ROG_STRIX_Evolve_RGB_Ambidiestro_y_Modular_be29b639-grn.jpg"
+                alt="Auris3" width="400px" height="350px">
         </div>
 
         <div class="item descprod">
@@ -58,7 +63,7 @@
                 <h1>Mouse ASUS ROG STRIX Evolve RGB Ambidiestro y Modular</h1>
                 <h3>$7.820 <del style="color: red">$9.250</del></h3>
                 <h4 style="color: dodgerblue">Precio Especial!</h3>
-                    <button>Agregar al Carrito</button>
+                    <button onclick="alertbox()">Agregar al Carrito</button>
             </div>
             <div class="linea"></div>
             <div>
@@ -174,5 +179,13 @@
         </div>
 
 
+        <script>
+
+            function alertbox() {
+                alert("El carrito estara disponible el 01/12/2022")
+            }
+
+        </script>
 
     </div>
+</body>

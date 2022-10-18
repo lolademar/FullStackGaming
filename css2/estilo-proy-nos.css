@@ -1,0 +1,229 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+    }
+
+
+    body{   
+        font-family: 'Heebo', sans-serif;
+        
+    }
+
+    .container{
+        display: grid;
+        width: 100%;
+        
+        text-align: center;
+        justify-items: stretch;
+   
+        /* row-gap: 10px;
+        column-gap: 10px;  */
+     
+        grid-template-rows: 10fr,5fr,5fr,1fr,6fr,6fr;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "a   a   a"
+        "b   b   b"
+        "b   b   b"
+        "t2  t2  t2"
+        "c   c   c"
+        "c   c   c"
+        ;
+        
+        }
+
+
+/*      header{
+        text-align: center;
+        font-weight: 400;
+        font-size: 2em;
+        height: 6vh;
+  
+       
+       }
+ */
+.links {
+        
+    /* display: grid;
+    grid-template-columns: repeat(4, auto); */
+    /* background-color: #7a2892; */
+    display:flex;
+    flex-wrap: wrap;
+    background-color:rgba(11,11,41,255);
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 40px;
+    
+    height: 100%;
+    min-height: 6vh;
+    
+    
+    
+}
+.link {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px;
+    border-color: rgb(224, 243, 252);
+    border-style: groove;
+    text-align: center;
+    list-style: none;
+    width: 100px;
+    background-color:rgba(11,11,41,255);
+    
+    padding: 3px;
+    font-weight: 200;
+}
+
+.link a{color:#7a2892; text-decoration:none}
+
+.tit1{ margin-bottom: 2rem ;}
+
+
+.tit2{
+    grid-area: t2;
+    width: 100%;
+}
+.tit2 p{
+    
+    
+    /* height: 12vh; */
+    font-size: 35px;   
+    color: rgb(73, 73, 73);
+    padding: 0.2rem;
+    text-align: center;
+    background-color: black;
+}
+
+
+.sup{
+    grid-area: a;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../img2/BlueFuturisticGamingLogosup.png");
+    width: 100%;
+    height: 200px;
+    background-position: center center;
+    /* background-size: cover; */
+    animation: zoomIn;
+    animation-duration: 2s;
+    border-radius: 20px;
+    margin-top: 10px
+    ;
+}
+
+
+
+.cent{
+    grid-area: b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.inf{
+    grid-area: c;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    background-color:rgb(255, 248, 239);
+}
+
+
+.centbox{
+    padding-top:1vh;
+    margin: 2rem;
+    width: 30rem;
+    height: 60vh;
+    
+    animation: jackInTheBox;
+    animation-duration: 2s;
+   
+    }
+
+
+.centboxText{ 
+    margin: 2rem;
+    text-align:center;
+    width: 35rem;
+    font-weight: 150;
+    font-size: 1.5rem;
+   
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-bottom:2rem;
+    }
+
+.centboxText div{
+    padding-top: 4rem;
+    
+}    
+.trans{
+    position:relative;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 20rem;
+    height: 60vh;
+    min-height: 30rem;
+    background-color: white;
+    box-shadow: -5px 10px 10px  #888888;
+
+    /*justify-items: stretch; */
+ /*    grid-template-rows: 2;
+        grid-template-columns: 1;
+        grid-template-areas: 
+        "aa"
+        "bb" */
+
+    
+}
+
+.trans:hover {
+    left:10px;
+    top: -10px;
+      
+    transition-timing-function:linear;
+     
+   }
+
+
+
+
+.trans div{ 
+padding: 1.5rem;
+text-align:left;
+color: rgb(65, 64, 64);
+font-weight: 150;
+
+}
+
+label, h6 {
+    color: rgb(65, 64, 64);
+    font-size: em;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    font-family:'Heebo', sans-serif;
+}
+
+/*.trans:hover{
+     animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+ 
+    
+}*/
+
+/*  @keyframes mover{
+    100%{
+        transform: translate(20px,-20px);
+        
+    }
+} */
+

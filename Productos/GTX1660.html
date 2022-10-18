@@ -29,19 +29,20 @@
 
     </header>
     <nav>
-        <section class="links">
-            <div class="contenedor">
-                <div class="links">
-                    <li class="link"><a href="../index.html">Home</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="productos.html">Productos</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="../contacto.html">Contacto</a> </li>
-                </div>
+        <div class="links">
+            <div class="links">
+                <li class="link"><a href="index.html">Home</a>
             </div>
-        </section>
+            <div class="links">
+                <li class="link"><a href="productos.html">Productos</a>
+            </div>
+            <div class="links">
+                <li class="link"><a href="contacto.html">Contacto</a> </li>
+            </div>
+            <div class="links">
+                <li class="link"><a href="nosotros.html">Nosotros</a> </li>
+            </div>
+        </div>
     </nav>
 
     <div class="productos">
@@ -49,8 +50,10 @@
             <img class="slider-item"
                 src="/img/compragamer_Imganen_general_28866_Placa_de_Video_ASUS_GeForce_GTX_1660_TI_6GB_GDDR6_TUF_EVO_OC_c3ef28a0-grn.jpg"
                 alt="Auris" width="400px" height="350px">
-            <img class="slider-item" src="/img/placa-de-video-vga-6gb-gtx-1660-ti-asus-tuf-evo-gaming-6g.jpg" alt="Auris2" width="400px" height="350px">
-            <img class="slider-item" src="/img/placa-de-video-vga-6gb-gtx-1660-ti-asus-tuf-evo-gaming-6g (1).jpg" alt="Auris3" width="400px" height="350px">
+            <img class="slider-item" src="/img/placa-de-video-vga-6gb-gtx-1660-ti-asus-tuf-evo-gaming-6g.jpg"
+                alt="Auris2" width="400px" height="350px">
+            <img class="slider-item" src="/img/placa-de-video-vga-6gb-gtx-1660-ti-asus-tuf-evo-gaming-6g (1).jpg"
+                alt="Auris3" width="400px" height="350px">
         </div>
 
         <div class="item descprod">
@@ -58,7 +61,7 @@
                 <h1>Placa de Video ASUS GeForce GTX 1660 TI 6GB GDDR6 TUF EVO OC</h1>
                 <h3>$92.450 <del style="color: red">$123.460</del></h3>
                 <h4 style="color: dodgerblue">Precio Especial!</h3>
-                    <button>Agregar al Carrito</button>
+                    <button onclick="alertbox()">Agregar al Carrito</button>
             </div>
             <div class="linea"></div>
             <div>
@@ -151,6 +154,13 @@
             </div>
         </div>
 
+        <script>
 
+            function alertbox() {
+                alert("El carrito estara disponible el 01/12/2022")
+            }
+
+        </script>
 
     </div>
+</body>

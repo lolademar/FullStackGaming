@@ -29,28 +29,33 @@
 
     </header>
     <nav>
-        <section class="links">
-            <div class="contenedor">
-                <div class="links">
-                    <li class="link"><a href="../index.html">Home</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="productos.html">Productos</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="../contacto.html">Contacto</a> </li>
-                </div>
+        <div class="links">
+            <div class="links">
+                <li class="link"><a href="index.html">Home</a>
             </div>
-        </section>
+            <div class="links">
+                <li class="link"><a href="productos.html">Productos</a>
+            </div>
+            <div class="links">
+                <li class="link"><a href="contacto.html">Contacto</a> </li>
+            </div>
+            <div class="links">
+                <li class="link"><a href="nosotros.html">Nosotros</a> </li>
+            </div>
+        </div>
     </nav>
 
     <div class="productos">
         <div class="item fotoprod">
             <img class="slider-item"
-                src="/img/compragamer_Imganen_general_20551_Mother_ASUS_PRIME_A520M-K_AM4_f5d89e00-grn.jpg"
-                alt="Auris" width="400px" height="350px">
-            <img class="slider-item" src="/img/compragamer_Imganen_general_20553_Mother_ASUS_PRIME_A520M-K_AM4_9216f824-grn.jpg" alt="Auris2" width="400px" height="350px">
-            <img class="slider-item" src="/img/compragamer_Imganen_general_20555_Mother_ASUS_PRIME_A520M-K_AM4_1a4ced0a-med.jpg" alt="Auris3" width="400px" height="350px">
+                src="/img/compragamer_Imganen_general_20551_Mother_ASUS_PRIME_A520M-K_AM4_f5d89e00-grn.jpg" alt="Auris"
+                width="400px" height="350px">
+            <img class="slider-item"
+                src="/img/compragamer_Imganen_general_20553_Mother_ASUS_PRIME_A520M-K_AM4_9216f824-grn.jpg" alt="Auris2"
+                width="400px" height="350px">
+            <img class="slider-item"
+                src="/img/compragamer_Imganen_general_20555_Mother_ASUS_PRIME_A520M-K_AM4_1a4ced0a-med.jpg" alt="Auris3"
+                width="400px" height="350px">
         </div>
 
         <div class="item descprod">
@@ -58,7 +63,7 @@
                 <h1>Auriculares HyperX Cloud Flight Black Wireless</h1>
                 <h3>$17.350 <del style="color: red">$24.780</del></h3>
                 <h4 style="color: dodgerblue">Precio Especial!</h3>
-                    <button>Agregar al Carrito</button>
+                    <button onclick="alertbox()">Agregar al Carrito</button>
             </div>
             <div class="linea"></div>
             <div>
@@ -161,7 +166,14 @@
             </div>
         </div>
 
+        <script>
+
+            function alertbox() {
+                alert("El carrito estara disponible el 01/12/2022")
+            }
+
+        </script>
 
 
     </div>
-
+</body>

@@ -29,19 +29,20 @@
 
     </header>
     <nav>
-        <section class="links">
-            <div class="contenedor">
-                <div class="links">
-                    <li class="link"><a href="../index.html">Home</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="productos.html">Productos</a>
-                </div>
-                <div class="links">
-                    <li class="link"><a href="../contacto.html">Contacto</a> </li>
-                </div>
+        <div class="links">
+            <div class="links">
+                <li class="link"><a href="index.html">Home</a>
             </div>
-        </section>
+            <div class="links">
+                <li class="link"><a href="productos.html">Productos</a>
+            </div>
+            <div class="links">
+                <li class="link"><a href="contacto.html">Contacto</a> </li>
+            </div>
+            <div class="links">
+                <li class="link"><a href="nosotros.html">Nosotros</a> </li>
+            </div>
+        </div>
     </nav>
 
     <div class="productos">
@@ -50,7 +51,9 @@
                 src="/img/compragamer_Imganen_general_17898_Procesador_AMD_Ryzen_5_1600_AF_Zen__12nm_AM4_Wraith_Stealth_Cooler_187bb9ab-grn.jpg"
                 alt="Auris" width="400px" height="350px">
             <img class="slider-item" src="/img/Ryzen1600.jpg" alt="Auris2" width="400px" height="350px">
-            <img class="slider-item" src="/img/compragamer_Imganen_general_17901_Procesador_AMD_Ryzen_5_1600_AF_Zen__12nm_AM4_Wraith_Stealth_Cooler_71684eb1-grn.jpg" alt="Auris3" width="400px" height="350px">
+            <img class="slider-item"
+                src="/img/compragamer_Imganen_general_17901_Procesador_AMD_Ryzen_5_1600_AF_Zen__12nm_AM4_Wraith_Stealth_Cooler_71684eb1-grn.jpg"
+                alt="Auris3" width="400px" height="350px">
         </div>
 
         <div class="item descprod">
@@ -58,7 +61,7 @@
                 <h1>Procesador AMD Ryzen 5 1600 AF Zen+ 12nm AM4 Wraith Stealth Cooler</h1>
                 <h3>$41.400 <del style="color: red">$46.800</del></h3>
                 <h4 style="color: dodgerblue">Precio Especial!</h3>
-                    <button>Agregar al Carrito</button>
+                    <button onclick="alertbox()">Agregar al Carrito</button>
             </div>
             <div class="linea"></div>
             <div>
@@ -122,5 +125,13 @@
         </div>
 
 
+        <script>
+
+            function alertbox() {
+                alert("El carrito estara disponible el 01/12/2022")
+            }
+
+        </script>
 
     </div>
+</body>
