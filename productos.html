@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>FullStack Gaming - Productos</title>
 </head>
+
 <body>
-    <h1>En construcción</h1>
+    <header class="header">
+        <img src="img/Blue_Futuristic_Gaming_Logo-removebg-preview.png" alt="logo" width="200px" height="200px"
+            class="logo">
+        <input type="search" name="busqueda" id="busqueda" placeholder="Buscador">
+        <button class="boton" style="vertical-align:middle"> <span>Buscar</span></button>
+        <section>
+            <div class="acceso">
+                <img src="img/acceso.png" alt="acceso" width="40px" height="40px" align="center"> <a href="login.html"
+                    target="_blank">Iniciar Sesion</a>
+            </div>
+            <div class="carrito">
+                <img src="img/carrito-de-compras.png" alt="carrito" width="40px" height="40px" align="center"> <a href="#" onclick="alertbox()">Carrito
+                    de Compras</a> 
+            </div>
+        </section>
+
+
+    </header>
+    
+
+    
+
+    <h2 id="titulo">APROVECHA LOS DESCUENTOS DE LA SEMANA GAMER</h2>
+
+    <div class="grid-container">
+        <div class="div1">
+            <a href="Productos/HyperxCloudFight.html">
+                <img src="img/compragamer_Imganen_general_30990_Auriculares_HyperX_Cloud_Flight_Black_Wireless_ee2bc8f7-grn.jpg"
+                    alt="Auris" width="300px">
+            </a>
+            <p>Auriculares HyperX Cloud Flight Black Wireless</p>
+            <b>$</b><b class="iprecio">67.40</b>
+            <del>USD 78,20</del>
+
+
+        </div>
+        <div>
+            <a href="Productos/GTX1660.html">
+                <img src="img/compragamer_Imganen_general_28866_Placa_de_Video_ASUS_GeForce_GTX_1660_TI_6GB_GDDR6_TUF_EVO_OC_c3ef28a0-grn.jpg"
+                    alt="Auris" width="300px">
+            </a>
+            <p>Placa de Video ASUS GeForce GTX 1660 TI 6GB GDDR6 TUF EVO OC</p>
+            <b>$</b><b class="iprecio">308.17</b>
+            <del>USD 411,53</del>
+        </div>
+        <div>
+            <a href="Productos/GEIL16GB.html">
+                <img src="img/compragamer_Imganen_general_25307_Memoria_GeiL_DDR4_16GB_3000MHz_Orion_RGB_Red_3f4d2dc1-grn.jpg"
+                    alt="Auris" width="300px">
+            </a>
+            <p>Memoria GeiL DDR4 16GB 3000MHz Orion RGB Red</p>
+            <b>$</b><b class="iprecio">58.83</b>
+            <del>USD 68,50</del>
+        </div>
+        <div>
+            <a href="Productos/Ryzen1600AF.html">
+                <img src="img/compragamer_Imganen_general_17898_Procesador_AMD_Ryzen_5_1600_AF_Zen__12nm_AM4_Wraith_Stealth_Cooler_187bb9ab-grn.jpg"
+                    alt="Auris" width="300px">
+            </a>
+            <p>Procesador AMD Ryzen 5 1600 AF Zen+ 12nm AM4 Wraith Stealth Cooler</p>
+            <b>$</b><b class="iprecio">138</b>
+            <del>USD 156</del>
+        </div>
+        <div>
+            <a href="Productos/MouseROGStrix.html">
+                <img src="img/compragamer_Imganen_general_23204_Mouse_ASUS_ROG_STRIX_Evolve_RGB_Ambidiestro_y_Modular_4dfc0364-grn.jpg"
+                    alt="Auris" width="300px">
+            </a>
+            <p>Mouse ASUS ROG STRIX Evolve RGB Ambidiestro y Modular</p>
+            <b>$</b><b class="iprecio">26.07</b>
+            <del>USD 30,83</del>
+        </div>
+        <div>
+            <a href="Productos/MotherASUS.html">
+                <img src="img/compragamer_Imganen_general_20551_Mother_ASUS_PRIME_A520M-K_AM4_f5d89e00-grn.jpg"
+                    alt="Auris" width="300px">
+            </a>
+            <p>Mother ASUS PRIME A520M-K AM4</p>
+            <b>$</b><b class="iprecio">57.83</b>
+            <del>USD 82,60</del>
+        </div>
+    </div>
+
+    
+
+
+<script>
+    
+    const fetchData= async()=>{
+    try{
+        const host = 'api.frankfurter.app';       
+        const cdolar=1;        
+        /* pido cambio de un dolar a pesos y después multiplico por cantidad de USD en usrData */
+        const resp= await fetch(`https://${host}/latest?amount=${cdolar}&from=USD&to=HUF`);
+        const data= await resp.json();
+        
+        usarData(data.rates.HUF)
+        
+    }catch(error){console.log("Error"+error)}
+}
+;
+fetchData();
+const usarData=valor=>{
+    const x=document.getElementsByClassName("iprecio");
+
+    for(i in x){
+        xv=x[i].textContent
+        xv*=valor
+        x[i].textContent=new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'ARS' }).format(xv)
+    }
+};
+
+</script>
+
 </body>
+
+
+
 </html>
