@@ -12,36 +12,38 @@
 
 <body>
     <header>
-      <div class="clogin">
-        <img src="img/Blue_Futuristic_Gaming_Logo-removebg-preview.png" alt="logo" width="200px" height="200px"
-            class="logo">
-        <div class="buscar">
-             <input type="search" name="busqueda" id="busqueda" placeholder="Buscador">
-        
-             <button class="boton" style="vertical-align:middle"> <span>Buscar</span></button>
+        <div class="clogin">
+            <a href="/index.html"> <img src="img/Blue_Futuristic_Gaming_Logo-removebg-preview.png" alt="logo"
+                    width="200px" height="200px" class="logo"> </a>
+
+            <div class="buscar">
+                <input type="search" name="busqueda" id="busqueda" placeholder="Buscador">
+
+                <button class="boton" style="vertical-align:middle"> <span>Buscar</span></button>
+            </div>
+            <section class="buscar">
+                <div class="acceso">
+                    <img src="img/acceso.png" alt="acceso" width="40px" height="40px"> <a href="login.html"
+                        target="_blank">Iniciar Sesion</a>
+                </div>
+                <div class="carrito">
+                    <img src="img/carrito-de-compras.png" alt="carrito" width="40px" height="40px"> <a href="#"
+                        onclick="alertbox()">Carrito
+                        de Compras</a>
+                </div>
+            </section>
         </div>
-        <section class="buscar">
-            <div class="acceso">
-                <img src="img/acceso.png" alt="acceso" width="40px" height="40px"> <a href="login.html"
-                    target="_blank">Iniciar Sesion</a>
-            </div>
-            <div class="carrito">
-                <img src="img/carrito-de-compras.png" alt="carrito" width="40px" height="40px"> <a href="#" onclick="alertbox()">Carrito
-                    de Compras</a> 
-            </div>
-        </section>
-      </div>
 
     </header>
     <nav>
         <div class="links">
-                
-            
-                <li class="link"><a href="index.html">Home</a></li>
-                <li class="link"><a href="productos.html">Productos</a></li>
-                <li class="link"><a href="contacto.html">Contacto</a> </li>
-                <li class="link"><a href="nosotros.html">Nosotros</a> </li>
-                
+
+
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="productos.html">Productos</a></li>
+            <li class="link"><a href="contacto.html" target="_blank">Contacto</a> </li>
+            <li class="link"><a href="nosotros.html">Nosotros</a> </li>
+
         </div>
     </nav>
 
@@ -157,33 +159,40 @@
         </div>
 
 
-<script>
-    
-    const fetchData= async()=>{
-    try{
-        const host = 'api.frankfurter.app';       
-        const cdolar=1;        
-        /* pido cambio de un dolar a pesos y después multiplico por cantidad de USD en usrData */
-        const resp= await fetch(`https://${host}/latest?amount=${cdolar}&from=USD&to=HUF`);
-        const data= await resp.json();
-        
-        usarData(data.rates.HUF)
-        
-    }catch(error){console.log("Error"+error)}
-}
-;
-fetchData();
-const usarData=valor=>{
-    const x=document.getElementsByClassName("iprecio");
+        <script>
 
-    for(i in x){
-        xv=x[i].textContent
-        xv*=valor
-        x[i].textContent=new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'ARS' }).format(xv)
-    }
-};
+            const fetchData = async () => {
+                try {
+                    const host = 'api.frankfurter.app';
+                    const cdolar = 1;
+                    /* pido cambio de un dolar a pesos y después multiplico por cantidad de USD en usrData */
+                    const resp = await fetch(`https://${host}/latest?amount=${cdolar}&from=USD&to=HUF`);
+                    const data = await resp.json();
 
-</script>
+                    usarData(data.rates.HUF)
+
+                } catch (error) { console.log("Error" + error) }
+            }
+                ;
+            fetchData();
+            const usarData = valor => {
+                const x = document.getElementsByClassName("iprecio");
+
+                for (i in x) {
+                    xv = x[i].textContent
+                    xv *= valor
+                    x[i].textContent = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'ARS' }).format(xv)
+                }
+            };
+
+
+            function alertbox() {
+
+                alert("El carrito estara disponible el 01/12/2022")
+
+            }
+
+        </script>
 
 </body>
 

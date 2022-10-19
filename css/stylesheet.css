@@ -183,9 +183,11 @@ del{
 
 .redes {
 
-    list-style-type: none;
-    text-align: left;
-
+    display:flex;
+    justify-items: stretch;
+    justify-content: left;
+    flex-wrap: wrap;
+      
 }
 
 footer {
@@ -573,5 +575,17 @@ footer {
             
         }
     } */
-    
+
+    .fcontact{
+        display:flex;
+        justify-content: space-around;         
+        flex-wrap: wrap;
+        background-color: rgba(11,11,41,255);    
+        background-size: cover;
+        color: #6fbdb6ee;
+        height: 100%;
+        
+        
+        
+    }
     
