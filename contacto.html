@@ -22,19 +22,19 @@
             <div class="col-12 col-lg-6 pt-5 ps-5 m-0">
                
                 <h1>Escribinos</h1>
-                <form class="needs-validation" action="link" method="post" novalidate>
+                <form class="needs-validation" id="formu" onsubmit="handleSubmit()" action="" novalidate>
                     
                         <h5 class="ms-1 mb-3 mt-4">Datos de contacto</h5>
                     
                         <div class="row g-3 mb-3 me-2">
                             <div class="col-sm-6">
-                              <input type="text" class="form-control"  placeholder="Nombre" aria-label="First name" required>
+                              <input name="firstname" type="text" class="form-control"  placeholder="Nombre" aria-label="First name" required>
                               <div class="invalid-feedback">
                                 Por favor completar el Nombre.
                               </div>
                             </div>
                             <div class="col-sm-6">
-                              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+                              <input name="lastname"type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
                               <div class="invalid-feedback">
                                 Por favor completar el Apellido.
                               </div>
@@ -44,7 +44,7 @@
                         <div class="row mb-3 ms-1">
                             <label for="inputEmail3" class="col-sm-2 col-form-label" >Email @</label>
                             <div class="col-sm-8">
-                              <input type="email" class="form-control" id="inputEmail3" required>
+                              <input name="email" type="email" class="form-control" id="inputEmail3" required>
                               <div class="invalid-feedback">
                                 Por favor completar el e-mail.
                               </div>
@@ -90,7 +90,7 @@
                         <div class="row">
                             <div class="col-sm-11">
                               
-                            <textarea rows="6" style="height:100%" class="form-control" aria-label="With textarea" placeholder="Escribinos aquí tu consulta" required></textarea>
+                            <textarea name="mensaje" rows="6" style="height:100%" class="form-control" aria-label="With textarea" placeholder="Escribinos aquí tu consulta" required></textarea>
                             <div class="invalid-feedback">
                                 Por favor escribinos tus consulta.
                               </div>
@@ -102,7 +102,7 @@
                         </div>
                      
                 </form>
-               
+                <a href="mailto:FullStackgGaming@gmail.com" id="truco">mail</a>
             </div>
 
             <div class="col-12 col-lg-6 p-0 m-0 bcolor">
@@ -159,7 +159,7 @@
         
         
           
- 
+    
     </main>
 
     <script>
@@ -177,13 +177,28 @@
             if (!form.checkValidity()) {
               event.preventDefault()
               event.stopPropagation()
-            }
-    
+            }       
             form.classList.add('was-validated')
+            
           }, false)
         })
-                  })()
 
+      
+ 
+                  })()
+       //Enviar
+        
+
+        function handleSubmit(){
+          const $formu=document.querySelector('#formu')
+          if($formu.checkValidity()){          
+          const $buttonMailto=document.querySelector('#truco')
+          const form2=new FormData($formu)
+          $buttonMailto.setAttribute('href',`mailto:FullStackGaming@gmail.com?subject= Nombre: ${form2.get('firstname')} email:${form2.get('email')}&body=${form2.get('mensaje')}`)
+          $buttonMailto.click()
+        }
+        }
+    
     </script>
 
 
