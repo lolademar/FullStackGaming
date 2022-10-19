@@ -11,66 +11,67 @@
 </head>
 
 <body>
-    <header class="header">
-        <img src="../img/Logo.png" alt="logo" width="200px" height="200px" class="logo">
-        <input type="search" name="busqueda" id="busqueda" placeholder="Buscador">
-        <button class="boton" style="vertical-align:middle"> <span>Buscar</span></button>
-        <section>
-            <div class="acceso">
-                <img src="../img/acceso.png" alt="acceso" width="40px" height="40px" align="center"> Iniciar Sesion
-            </div>
-            <div class="carrito">
-                <img src="../img/carrito-de-compras.png" alt="carrito" width="40px" height="40px" align="center">
-                Carrito
-                de Compras
-            </div>
-        </section>
-
-
+    <header>
+        <div class="clogin">
+          <img src="../img/Blue_Futuristic_Gaming_Logo-removebg-preview.png" alt="logo" width="200px" height="200px"
+              class="logo">
+          <div class="buscar">
+               <input type="search" name="busqueda" id="busqueda" placeholder="Buscador">
+          
+               <button class="boton" style="vertical-align:middle"> <span>Buscar</span></button>
+          </div>
+          <section class="buscar">
+              <div class="acceso">
+                  <img src="../img/acceso.png" alt="acceso" width="40px" height="40px"> <a href="login.html"
+                      target="_blank">Iniciar Sesion</a>
+              </div>
+              <div class="carrito">
+                  <img src="../img/carrito-de-compras.png" alt="carrito" width="40px" height="40px"> <a href="#" onclick="alertbox()">Carrito
+                      de Compras</a> 
+              </div>
+          </section>
+        </div>
+  
     </header>
+
     <nav>
         <div class="links">
-            <div class="links">
-                <li class="link"><a href="../index.html">Home</a>
-            </div>
-            <div class="links">
-                <li class="link"><a href="../productos.html">Productos</a>
-            </div>
-            <div class="links">
-                <li class="link"><a href="../contacto.html">Contacto</a> </li>
-            </div>
-            <div class="links">
-                <li class="link"><a href="../nosotros.html">Nosotros</a> </li>
-            </div>
+                
+            
+            <li class="link"><a href="../index.html">Home</a></li>
+            <li class="link"><a href="../productos.html">Productos</a></li>
+            <li class="link"><a href="../contacto.html">Contacto</a> </li>
+            <li class="link"><a href="../nosotros.html">Nosotros</a> </li>
+            
         </div>
     </nav>
 
     <div class="productos">
         <div class="item fotoprod">
             <img class="slider-item"
-                src="/img/compragamer_Imganen_general_25307_Memoria_GeiL_DDR4_16GB_3000MHz_Orion_RGB_Red_3f4d2dc1-grn.jpg"
+                src="../img/compragamer_Imganen_general_25307_Memoria_GeiL_DDR4_16GB_3000MHz_Orion_RGB_Red_3f4d2dc1-grn.jpg"
                 alt="geil" width="400px" height="350px">
         </div>
 
         <div class="item descprod">
             <div>
                 <h1>Memoria GeiL DDR4 16GB 3000MHz Orion RGB Red</h1>
-                <h3>$17.650 <del style="color: red">$20.550</del></h3>
+                <h3 class="iprecio">24.895,09 ARS <del style="color: red">USD 68,50</del></h3>
                 <h4 style="color: dodgerblue">Precio Especial!</h3>
                     <button onclick="alertbox()">Agregar al Carrito</button>
             </div>
             <div class="linea"></div>
             <div>
                 <p>
-                    <img src="/img/verified.png" alt="#">
+                    <img src="../img/verified.png" alt="#">
                     <span>Garantia 12 meses</span>
                 </p>
                 <p>
-                    <img src="/img/tick.png" alt="#">
+                    <img src="../img/tick.png" alt="#">
                     <span>Stock Disponible</span>
                 </p>
                 <p>
-                    <img src="/img/shipped.png" alt="#">
+                    <img src="../img/shipped.png" alt="#">
                     <span>Envio a todo el pais.</span>
                 </p>
                 <div class="linea"></div>
@@ -119,12 +120,6 @@
         </div>
     </div>
 
-    <script>
 
-        function alertbox() {
-            alert("El carrito estara disponible el 01/12/2022")
-        }
-
-    </script>
 
 </body>
